@@ -10,7 +10,7 @@ jobs:
           MYSQL_USER: user
           MYSQL_PASSWORD: passw0rd
 
-    steps
+    steps:
       - run: 
           name: install mysql client
           command: |
