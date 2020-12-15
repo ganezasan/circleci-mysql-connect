@@ -18,4 +18,4 @@ jobs:
               sudo apt-get install -y mysql-client
       - run: 
           name: show database in mysql
-          command: mysql -u user -p 'passw0rd' -e 'show databases;'
+          command: mysql -u user -ppassw0rd -e 'show databases;'
