@@ -23,3 +23,6 @@ jobs:
       - run: 
           name: show database in mysql
           command: mysql -h 127.0.0.1 -u user -ppassw0rd -e 'show databases;'
+      - run: 
+          name: show database in mysql by root user
+          command: mysql -h 127.0.0.1 -u root -prootpw -e 'show databases;'
