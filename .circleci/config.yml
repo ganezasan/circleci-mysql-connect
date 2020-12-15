@@ -16,6 +16,10 @@ jobs:
           command: |
               sudo apt-get update
               sudo apt-get install -y mysql-client
+      - run:
+          name: Wait for db
+          command: dockerize -wait tcp://localhost:3306 -timeout 1m
+
       - run: 
           name: show database in mysql
           command: mysql -h 127.0.0.1 -u user -ppassw0rd -e 'show databases;'
